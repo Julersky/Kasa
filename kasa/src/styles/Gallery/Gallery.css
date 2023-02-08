@@ -1,0 +1,20 @@
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 25px;
+    background-color:#F7F7F7; 
+    margin: 43px 0;
+   
+
+}
+
+
+.kasa-housing-list{
+    /* position: absolute; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    list-style: none;
+    gap: 50px;
+
+}

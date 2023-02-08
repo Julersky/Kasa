@@ -1,0 +1,17 @@
+.kasa-header {
+	width: 1240px;
+	height: 68px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	margin: 5% 10%;
+	text-decoration: none;
+}
+
+.kasa-logo{
+	left: 0%;
+	right: 83.04%;
+	top: 0%;
+	bottom: 0%;
+}

@@ -1,11 +1,11 @@
 .kasa-header {
-	width: 1240px;
+	width: 85%;
+    margin: 15px auto;
 	height: 68px;
 	display: flex;
 	flex-direction: row;
 	align-items: center;
 	justify-content: space-between;
-	margin: 5% 10%;
 	text-decoration: none;
 }
 

@@ -1,0 +1,9 @@
+@import '../../styles/dist/main.scss';
+
+.kasa-header {
+	@include width;
+	height: 68px;
+	@include flexbox;
+	justify-content: space-between;
+}
+

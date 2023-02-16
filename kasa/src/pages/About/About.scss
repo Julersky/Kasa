@@ -1,0 +1,68 @@
+@import '../../styles/dist/main.scss';
+
+
+.about-wrapper{
+    @include flexbox;
+    flex-direction: column;
+    margin-bottom: 30px;
+    .about-collapse{
+        width: 70%;
+        margin: auto;
+        overflow: hidden;
+        .collapse-header{
+            @include flexbox;
+            justify-content: space-between;
+            background-color: $primary-color;
+            color: $secondary-color;
+            border-radius: 5px;            
+            padding: 8px 18px;
+            cursor: pointer;
+            .selected{
+                width: 30px;
+                height: 20px;
+                background-image: url('../../assets/arrow-up.png');
+                background-repeat: no-repeat;
+            }
+            .unselected{
+                @extend .selected;
+                background-image: url('../../assets/arrow-down.png');
+            }
+
+            .collapse-title{
+                font-size: 24px;
+                font-weight: 500;
+                margin:0;
+
+
+            }
+
+        }
+        .collapse-body-selected{
+            z-index: -1;
+            position: relative;
+            bottom:10px;
+            background-color: #F7F7F7 ;
+            border-radius: 5px;
+            padding: 30px 20px;
+
+            .collapse-content{
+                color: $primary-color;
+                margin: 0;
+                font-size: 24px;
+            }
+        }
+
+    }
+}
+
+.collapse-body-unselected{
+    z-index: -1;
+    position: relative;
+    background-color: #F7F7F7 ;
+    border-radius: 5px;
+    padding: 30px 20px;
+
+    bottom: 143px;;
+
+}
+

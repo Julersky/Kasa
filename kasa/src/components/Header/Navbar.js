@@ -1,15 +1,16 @@
-import '../../styles/Header/Navbar.css'
+import './Navbar.scss'
 import {Link} from 'react-router-dom'
+const Urlpath = window.location.pathname;
 
 
 function Navbar() {
 	return (
         <nav className = 'navbar'>
             <ul className = 'navbar-list'>
-                <li className = 'nav-link'>
+                <li className = {Urlpath ==='/' ? 'nav-link-active':'nav-link'}>
                     <Link to="/">Accueil</Link>
                 </li>
-                <li className = 'nav-link'>
+                <li className = {Urlpath ==='/a-propos' ? 'nav-link-active':'nav-link'}>
                     <Link to="/a-propos">A propos</Link>
                 </li>
 

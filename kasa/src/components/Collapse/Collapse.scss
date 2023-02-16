@@ -1,0 +1,77 @@
+@import '../../styles/dist/main.scss';
+
+
+.wrapper{
+    @include flexbox;
+    flex-direction: column;
+    margin-bottom: 30px;
+    .collapse{
+        position: relative;
+        width: 70%;
+        margin: auto;
+        margin-bottom: 20px;
+        overflow-y: hidden;
+        .collapse-header{
+            @include flexbox;
+            justify-content: space-between;
+            background-color: $primary-color;
+            color: $secondary-color;
+            border-radius: 5px;            
+            padding: 8px 18px;
+            cursor: pointer;
+            .selected{
+                width: 30px;
+                height: 20px;
+                background-image: url('../../assets/arrow-up.png');
+                background-repeat: no-repeat;
+            }
+            .unselected{
+                @extend .selected;
+                background-image: url('../../assets/arrow-down.png');
+            }
+
+            .collapse-title{
+                font-size: 24px;
+                font-weight: 500;
+                margin:0;
+
+
+            }
+
+        }
+        .collapse-body{
+            z-index: -1;
+            position: relative;
+            bottom:10px;
+            height: 0px;
+            overflow: hidden;
+            background-color: #F7F7F7 ;
+            border-radius: 5px;            
+            transition: height ease .5s;
+            .collapse-content{
+                padding: 30px 20px;
+                color: $primary-color;
+                margin: 0;
+                font-size: 24px;
+            }
+        &.show{
+            // transform :height(fit-content);
+            height: 150px;//Heigt auto ou fit content ne marche pas
+        }
+        }
+
+        .collapse-body-unselected{
+            z-index: -1;
+            position: relative;
+            background-color: #F7F7F7 ;
+            border-radius: 5px;
+            padding: 0;
+            max-height: 0 ;
+        
+        }
+
+    }
+}
+
+
+

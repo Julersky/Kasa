@@ -1,4 +1,4 @@
-import '../../styles/Gallery/Thumb.css'
+import './Thumb.scss'
 import {Link} from 'react-router-dom'
 
 function Thumb({ id, title, cover}) {
@@ -7,6 +7,7 @@ function Thumb({ id, title, cover}) {
 			<div className='card'>
 				<img className ='card-image'src={cover} alt={title}/>
 				<h3 className ='card-title'>{title}</h3>
+				<div className='background'></div>
 			</div>
 			
 		</Link>

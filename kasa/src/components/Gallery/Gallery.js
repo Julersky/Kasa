@@ -1,4 +1,4 @@
-import '../../styles/Gallery/Gallery.css'
+import './Gallery.scss'
 import Thumb from '../Gallery/Thumb'
 import housings from '../../datas/logements'
 

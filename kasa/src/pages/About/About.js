@@ -1,15 +1,26 @@
-import '../../styles/Header/Header.css'
-import '../../styles/About/About.css'
-import Navbar from '../../components/Header/Navbar'
-import logo from '../../assets/logo.png'
+import '../../styles/dist/main.scss'
+import './About.scss'
+import Banner from '../../components/Banner/Banner'
+import Collapse from '../../components/Collapse/Collapse'
+import data from '../../datas/about'
+
+
 
 function About() {
-	return <header className ='kasa-header'>
-		<img src={logo} alt='Kasa' className='kasa-logo' />
-		<Navbar />
+	return <main className ='about-main'>
+		<Banner />
+		<div>
+			{data.map(data =>{
+				return (
+					<div key={data.id}>
+						<Collapse title={data.title} content={data.content} id={data.id}/>
+					</div>
+				)
+			})
+			}
+		</div>	
 		
-				
-	</header>
+	</main>
 }
 
 export default About

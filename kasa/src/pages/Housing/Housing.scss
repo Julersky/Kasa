@@ -1,0 +1,91 @@
+@import '../../styles/dist/main.scss';
+
+
+.housing-main{
+    width: 85%;
+    margin: auto;
+    .housing-carousel{       
+        height: 250px;
+        border: 1px solid green;
+    }
+    
+    .housing-info{
+        @include flexbox;
+        @include font;
+        justify-content: space-between;
+        align-items: flex-end;
+        margin-bottom: 30px;
+            
+        .housing-description{        
+            color:$primary-color;
+            .housing-description-title{
+                font-size: 36px;
+                font-weight: 500;
+            }
+            .housing-description-location{
+                font-size: 18px;
+            }
+            .housing-description-tags{
+                @include flexbox;
+                justify-content: flex-start;
+                gap: 20px;
+                margin-top:25px ;
+                .tags{
+                    padding: 10px 30px;
+                    border-radius: 15px;
+                    background-color: $primary-color;
+                    color: white;
+                    font-size: 14px;
+                }
+            }
+    
+        }
+        .housing-host{
+            color:$primary-color;
+            font-weight: 500;
+            .housing-host-id{
+                @include flexbox;
+                gap: 20px;
+                .housing-host-id-picture{
+                    width: 64px;
+                    height: 64px;
+                    border-radius: 50%;
+                }
+                .housing-host-id-name{
+                    font-weight: 500;
+                    font-size: 18px;
+                }
+
+    
+            }
+            .housing-host-stars{
+                .stars-container{
+                    @include flexbox;
+                    justify-content: flex-end;
+                    gap: 10px;
+                    margin-top: 10px;
+                    .stars{
+                        width: 30px;
+                        height: 30px;
+                    }
+                
+
+                }
+
+            }
+    
+        }
+    
+    }
+    .housing-collapse{
+        @include flexbox;
+        align-items: baseline;
+        height: 300px;
+        border: 1px solid green;
+        section{
+            width: 50%;
+        }
+    }
+}
+
+

@@ -1,0 +1,26 @@
+@import '../../styles/dist/main.scss';
+
+.footer{
+    @include flexbox;
+    align-items: flex-end;
+    height: 209px;    
+    background: #000000;
+    .footer-items{
+        @include flexbox;
+        flex-direction: column;
+    }
+    .footer-kasa-logo{
+        height: 40px;
+        width: 122px;
+    
+    }
+    .footer-paragraph{
+        @include font;
+        font-size: 24px;
+        line-height: 142.6%;
+        color: #FFFFFF;
+    }
+    
+}
+
+

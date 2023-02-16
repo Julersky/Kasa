@@ -1,7 +1,13 @@
-import '../styles/Home.css'
+import './Home.scss'
+import Banner from '../../components/Banner/Banner'
+import Gallery from '../../components/Gallery/Gallery'
 
 function Home({ children }) {
-	return <div className='kasa-home'>{children}</div>
+	return <main className='kasa-home'>
+		<Banner />
+		<Gallery />
+
+	</main>
 }
 
 export default Home

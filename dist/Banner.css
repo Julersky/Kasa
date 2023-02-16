@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Shrikhand&display=swap");
+* {
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+}
+
+a:visited {
+  color: #FF6060;
+}
+
+body {
+  margin: 30px 0px 0px;
+}
+
+.banner, .banner-about {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../../assets/banner-home.png");
+  background-size: cover;
+  height: 223px;
+  width: 85%;
+  margin: 43px auto;
+  -o-object-fit: fill;
+     object-fit: fill;
+  border-radius: 25px;
+}
+.banner .banner-text, .banner-about .banner-text {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 142.6%;
+  color: #FFFFFF;
+  margin: 0;
+}
+
+.banner-about {
+  background-image: url("../../assets/banner-about.png");
+}/*# sourceMappingURL=Banner.css.map */

@@ -1,0 +1,19 @@
+@import '../../styles/dist/main.scss';
+
+.gallery{
+    border-radius: 25px;
+    background-color: $secondary-color; 
+    @include width;
+    .kasa-housing-list{
+        @include flexbox;
+        flex-wrap: wrap;
+        list-style: none;
+        gap: 50px;
+        padding: 56px 50px;
+    
+    }
+   
+
+}
+
+

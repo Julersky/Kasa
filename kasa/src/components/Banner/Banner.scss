@@ -1,0 +1,27 @@
+@import '../../styles/dist/main.scss';
+
+.banner{
+    @include flexbox;
+    background-image: url('../../assets/banner-home.png');
+    background-size: cover;
+    height: 223px;
+    width: 85%;
+    margin:43px auto;
+    object-fit: fill;
+    border-radius: 25px;
+
+    .banner-text{
+        @include font;
+        font-size: 48px;
+        line-height: 142.6%;
+        color: #FFFFFF;
+        margin: 0;
+    
+    }
+}
+.banner-about{
+    @extend .banner;
+    background-image: url('../../assets/banner-about.png');
+
+    }
+

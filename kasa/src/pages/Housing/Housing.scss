@@ -80,11 +80,13 @@
     .housing-collapse{
         @include flexbox;
         align-items: baseline;
-        height: 300px;
-        border: 1px solid green;
-        section{
-            width: 50%;
+        justify-content: space-between;             
+        .collapse-container{
+            width: 45%;
         }
+    }
+    .content{
+        margin: 0;
     }
 }
 

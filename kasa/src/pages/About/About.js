@@ -9,7 +9,7 @@ import data from '../../datas/about'
 function About() {
 	return <main className ='about-main'>
 		<Banner />
-		<div>
+		<div className='container'>
 			{data.map(data =>{
 				return (
 					<div key={data.id}>

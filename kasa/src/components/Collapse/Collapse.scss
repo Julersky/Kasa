@@ -5,9 +5,10 @@
     @include flexbox;
     flex-direction: column;
     margin-bottom: 30px;
+    justify-content: center;
     .collapse{
         position: relative;
-        width: 70%;
+        width: 100%;
         margin: auto;
         margin-bottom: 20px;
         overflow-y: hidden;
@@ -46,18 +47,17 @@
             height: 0px;
             overflow: hidden;
             background-color: #F7F7F7 ;
-            border-radius: 5px;            
-            transition: height ease .5s;
+            border-radius: 5px;           
+            
             .collapse-content{
                 padding: 30px 20px;
                 color: $primary-color;
                 margin: 0;
                 font-size: 24px;
             }
-        &.show{
-            // transform :height(fit-content);
-            height: 150px;//Heigt auto ou fit content ne marche pas
-        }
+        &.show{           
+            height: auto;
+
         }
 
         .collapse-body-unselected{
@@ -71,6 +71,7 @@
         }
 
     }
+}
 }
 
 

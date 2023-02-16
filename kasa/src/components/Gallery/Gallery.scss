@@ -3,7 +3,7 @@
 .gallery{
     border-radius: 25px;
     background-color: $secondary-color; 
-    @include width;
+    
     .kasa-housing-list{
         @include flexbox;
         flex-wrap: wrap;

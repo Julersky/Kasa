@@ -9,12 +9,12 @@ import Rating from '../../components/Rating/Rating'
 
 function Housing() {
 	const housing_id = useParams().id
-	console.log(housing_id)
+	
 
 	const focusedHousing = housings.filter(housing => housing.id === housing_id) 
-	
-	console.log(focusedHousing)
-	console.log(focusedHousing[0])
+
+	const equip =focusedHousing[0].equipments;
+
 
 
 	return(
@@ -45,11 +45,15 @@ function Housing() {
 
 			</div>
 			<div className='housing-collapse'>
-				<section>
+				<section className='collapse-container'>
 				<Collapse title='Description' content={focusedHousing[0].description}/>
 				</section>
-				<section>
-				<Collapse title='Équipements' content={focusedHousing[0].equipments}/>
+				<section className='collapse-container'>
+				<Collapse title='Équipements' content={equip.map((data, index) => {
+					return (
+						<p key={index} className='content'>{data}</p>
+					)
+				})}/>
 				</section>
 
 			</div>

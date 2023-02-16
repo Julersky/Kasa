@@ -1,7 +1,7 @@
 import '../../styles/dist/main.scss'
 import './Rating.scss'
-import fullStar from '../../assets/etoile-pleine.png'
-import emptyStar from '../../assets/etoile-vide.png'
+import fullStar from '../../assets/etoile-pleine.svg'
+import emptyStar from '../../assets/etoile-vide.svg'
 
 
 const Rating = ({hostRate}) => {

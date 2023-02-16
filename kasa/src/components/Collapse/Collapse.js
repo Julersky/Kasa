@@ -5,7 +5,6 @@ import { useState } from 'react'
 
 function Collapse({title, content, id}) {
 	const [selected, setSelected] = useState(false)
-
 	
 	return (
    	
@@ -15,11 +14,16 @@ function Collapse({title, content, id}) {
 					<h2 className='collapse-title'>{title}</h2>
 					<div className = {selected  ? 'selected':'unselected'}></div>
 				</div>
-				<div className = {selected  ? 'collapse-body show':'collapse-body'}>
-					<p className='collapse-content'>{content}</p>
+				<div className = {selected  ? 'collapse-body show' :'collapse-body'}>
+					<div className='collapse-content'>{content}</div>
 				</div>
 			</div>	
         </div>		
 
-)};
+)
+
+
+
+
+};
 export default Collapse;

@@ -1,8 +1,11 @@
 import './Banner.scss'
-const Urlpath = window.location.pathname;
+import {useLocation} from 'react-router-dom'
+
+
 
 function Banner() {
-    if(Urlpath ==='/'){
+    const location = useLocation();
+    if(location.pathname ==='/'){
         return (
             <div className ='banner'>
                 <h2 className='banner-text'>Chez vous, partout et ailleurs</h2>

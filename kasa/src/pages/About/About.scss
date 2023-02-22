@@ -1,14 +1,13 @@
-@import '../../styles/dist/main.scss';
+@import "../../styles/dist/main.scss";
 
-
-.about-main{
-    width: 85%;
+.about-main {
+  @include width;
+  .container {
+    width: 80%;
     margin: auto;
-    .container{
-        width: 80%;
-        margin: auto;
+    @media screen and (max-width: 768px) {
+      width: 100%;
+      margin: 0;
     }
-
+  }
 }
-
-

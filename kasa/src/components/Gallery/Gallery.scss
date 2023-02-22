@@ -1,19 +1,20 @@
-@import '../../styles/dist/main.scss';
+@import "../../styles/dist/main.scss";
 
-.gallery{
-    border-radius: 25px;
-    background-color: $secondary-color; 
-    
-    .kasa-housing-list{
-        @include flexbox;
-        flex-wrap: wrap;
-        list-style: none;
-        gap: 50px;
-        padding: 56px 50px;
-    
+.gallery {
+  border-radius: 25px;
+  background-color: $secondary-color;
+
+  .kasa-housing-list {
+    @include flexbox;
+    flex-wrap: wrap;
+    list-style: none;
+    gap: 50px;
+    padding: 56px 50px;
+  }
+  @media screen and (max-width: 768px) {
+    background-color: white;
+    .kasa-housing-list {
+      padding: 0;
     }
-   
-
+  }
 }
-
-

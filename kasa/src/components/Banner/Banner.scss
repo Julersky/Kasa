@@ -1,27 +1,51 @@
-@import '../../styles/dist/main.scss';
+@import "../../styles/dist/main.scss";
 
-.banner{
-    @include flexbox;
-    background-image: url('../../assets/banner-home.png');
-    background-size: cover;
-    height: 223px;
+.banner {
+  @include flexbox;
+  position: relative;
+  background-image: url("../../assets/banner-home.png");
+  background-size: cover;
+  height: 223px;
+  background-position: center;
+  width: 100%;
+  margin: 43px auto;
+  object-fit: fill;
+  border-radius: 25px;
+  .banner-background {
+    position: absolute;
+    z-index: 1;
     width: 100%;
-    margin:43px auto;
-    object-fit: fill;
+    height: 100%;
+    background-color: black;
+    opacity: 0.3;
     border-radius: 25px;
+  }
 
-    .banner-text{
-        @include font;
-        font-size: 48px;
-        line-height: 142.6%;
-        color: #FFFFFF;
-        margin: 0;
-    
+  .banner-text {
+    @include font;
+    position: relative;
+    z-index: 2;
+    font-size: 40px;
+    line-height: 142.6%;
+    color: #ffffff;
+    margin: 0;
+    white-space: nowrap;
+    .line-break {
+      display: none;
     }
+  }
+  @media screen and (max-width: 768px) {
+    justify-content: flex-start;
+    .banner-text {
+      font-size: 6vw;
+      padding: 0 30px;
+      .line-break {
+        display: initial;
+      }
+    }
+  }
 }
-.banner-about{
-    @extend .banner;
-    background-image: url('../../assets/banner-about.png');
-
-    }
-
+.banner-about {
+  @extend .banner;
+  background-image: url("../../assets/banner-about.png");
+}

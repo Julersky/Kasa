@@ -1,25 +1,22 @@
-import './Gallery.scss'
-import Thumb from '../Gallery/Thumb'
-import housings from '../../datas/logements'
+import "./Gallery.scss";
+import Thumb from "../Thumb/Thumb";
+import housings from "../../datas/logements";
 
 function Gallery() {
-	return (
-	<section className='gallery'>
-		<ul className='kasa-housing-list'>
-		{housings.map(housing => (
-		<Thumb
-			key={housing.id}
-			id={housing.id}
-			cover={housing.cover}
-			title={housing.title}
-			/>
-		))}
-		</ul>
-
-	</section>	
-
-	)
+  return (
+    <section className="gallery">
+      <ul className="kasa-housing-list">
+        {housings.map((housing) => (
+          <Thumb
+            key={housing.id}
+            id={housing.id}
+            cover={housing.cover}
+            title={housing.title}
+          />
+        ))}
+      </ul>
+    </section>
+  );
 }
 
-export default Gallery
-
+export default Gallery;

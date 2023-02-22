@@ -1,1 +1,60 @@
-@import '../../styles/dist/main.scss';
+@import "../../styles/dist/main.scss";
+
+.carousel {
+  .single-image {
+    display: none;
+  }
+
+  .carousel-background {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 2;
+    border-radius: 15px;
+    background: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0) 0%,
+      rgb(0 0 0 / 17%) 100%
+    );
+  }
+
+  .leftArrow {
+    @include flexbox;
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    top: 50%;
+    left: 1%;
+    transform: translateY(-50%);
+    z-index: 3;
+    cursor: pointer;
+    .leftArrow-logo {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .rightArrow {
+    @include flexbox;
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 1%;
+    z-index: 3;
+    cursor: pointer;
+    .rightArrow-logo {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .carousel-counter {
+    position: absolute;
+    left: 50%;
+    bottom: 0%;
+    z-index: 3;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+  }
+}

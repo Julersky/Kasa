@@ -1,0 +1,39 @@
+@import "../../styles/dist/main.scss";
+
+.navbar-list {
+  list-style: none;
+  min-width: fit-content;
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  gap: 30px;
+  .nav-link-text {
+    white-space: nowrap;
+  }
+  .nav-link {
+    @include font;
+    font-size: 24px;
+    line-height: 142.6%;
+    color: $primary-color;
+  }
+  .nav-link-active {
+    @extend .nav-link;
+    & .nav-link-text {
+      border-bottom: 2px solid $primary-color;
+      display: inline-block;
+      height: 30px;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    gap: 20px;
+    .nav-link {
+      font-size: 4vw;
+      text-transform: uppercase;
+    }
+    .nav-link-active {
+      & .nav-link-text {
+        height: 1.15em;
+      }
+    }
+  }
+}

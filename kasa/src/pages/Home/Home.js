@@ -1,13 +1,14 @@
-import './Home.scss'
-import Banner from '../../components/Banner/Banner'
-import Gallery from '../../components/Gallery/Gallery'
+import "./Home.scss";
+import Banner from "../../components/Banner/Banner";
+import Gallery from "../../components/Gallery/Gallery";
 
 function Home({ children }) {
-	return <main className='kasa-home'>
-		<Banner />
-		<Gallery />
-
-	</main>
+  return (
+    <main className="kasa-home">
+      <Banner />
+      <Gallery />
+    </main>
+  );
 }
 
-export default Home
+export default Home;

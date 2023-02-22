@@ -2,7 +2,7 @@
 
 # dependencies
 /kasa/node_modules
-/kasa/node_modules/package*
+/kasa/package.json
 
 
-/dist
+dist

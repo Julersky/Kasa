@@ -9,12 +9,14 @@
   gap: 30px;
   .nav-link-text {
     white-space: nowrap;
+    color: $primary-color;
   }
   .nav-link {
     @include font;
-    font-size: 24px;
+    font-size: 18px;
     line-height: 142.6%;
     color: $primary-color;
+    text-decoration: none;
   }
   .nav-link-active {
     @extend .nav-link;

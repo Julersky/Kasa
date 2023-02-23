@@ -11,7 +11,7 @@ const Rating = ({ hostRate }) => {
     <img src={emptyStar} alt="Empty Star" className="greyStar" />
   );
   return (
-    //Dans un premier temps on fait une difference pour recuperer a partir de quel indice, du tableau de 5 elements (donc indice 0,1,2,3,4), on va récuperer les etoiles pleines(avec slice). Ensuite on fait un map pour creer le nombre d'elements correspondant. Ici si la note est de 4: apres soustraction on determine qu'on recupere le reste du tableau a partir de l'indice 1 (inclus) donc 4 elements 
+    //Dans un premier temps on fait une difference pour recuperer a partir de quel indice, du tableau de 5 elements (donc indice 0,1,2,3,4), on va récuperer les etoiles pleines(avec slice). Ensuite on fait un map pour creer le nombre d'elements correspondant. Ici si la note est de 4: apres soustraction on determine qu'on recupere le reste du tableau a partir de l'indice 1 (inclus) donc 4 elements
     <div className="stars-container">
       {fullStars.slice(5 - hostRate).map((fullStar, index) => {
         return (

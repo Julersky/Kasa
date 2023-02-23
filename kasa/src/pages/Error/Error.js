@@ -1,9 +1,13 @@
 import "./Error.scss";
+import { useEffect } from "react";
 import { Link } from "react-router-dom";
 
 function Error() {
+  useEffect(() => {
+    document.title = "Page introuvable";
+  }, []);
   return (
-    <main>
+    <main className="error-main">
       <div className="error-container">
         <h1 className="error-title">404</h1>
         <p className="error-text">

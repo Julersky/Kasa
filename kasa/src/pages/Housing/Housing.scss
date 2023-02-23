@@ -4,14 +4,14 @@
   @include width;
 
   .housing-carousel {
-    height: 450px;
+    height: 330px;
     margin-top: 20px;
   }
 
   .housing-info {
     @include flexbox;
     @include font;
-    flex-wrap: wrap;
+    // flex-wrap: wrap;
     justify-content: space-between;
     align-items: flex-end;
     margin-bottom: 30px;
@@ -19,7 +19,7 @@
     .housing-description {
       color: $primary-color;
       .housing-description-title {
-        font-size: 36px;
+        font-size: 30px;
         font-weight: 500;
       }
       .housing-description-location {
@@ -54,18 +54,18 @@
         .housing-host-id-name {
           text-align: end;
           font-weight: 500;
-          font-size: 18px;
+          font-size: 16px;
         }
       }
       .housing-host-stars {
         .stars-container {
           @include flexbox;
           justify-content: flex-end;
-          gap: 10px;
+          gap: 5px;
           margin-top: 10px;
           .stars img {
-            width: 30px;
-            height: 30px;
+            width: 25px;
+            height: 25px;
           }
         }
       }
@@ -98,6 +98,7 @@
       }
     }
     .housing-info {
+      flex-wrap: wrap;
       .housing-host {
         @include flexbox;
         flex-direction: row-reverse;
@@ -106,10 +107,10 @@
         margin-top: 30px;
         .housing-host-stars {
           .stars-container {
-            gap: 5px;
+            gap: 0;
             .stars img {
-              width: 5vw;
-              height: 5vh;
+              width: 4vw;
+              height: 4vh;
             }
           }
         }

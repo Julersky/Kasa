@@ -8,6 +8,10 @@ import Rating from "../../components/Rating/Rating";
 import Error from "../../pages/Error/Error";
 
 function Housing() {
+  document.title = "Logement Kasa";
+  const icon = document.querySelector("head > link:nth-child(5)");
+  icon.href = "../../assets/logo.png";
+
   const housing_id = useParams().id;
   const [idInData, setIdInData] = useState(false);
 
@@ -33,7 +37,7 @@ function Housing() {
   const pictures = focusedHousing[0].pictures;
 
   return (
-    <div className="housing-main">
+    <main className="housing-main">
       <div className="housing-carousel">
         <Carousel
           images={pictures.map((pictures) => {
@@ -95,7 +99,7 @@ function Housing() {
           />
         </section>
       </div>
-    </div>
+    </main>
   );
 }
 

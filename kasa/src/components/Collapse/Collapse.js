@@ -13,7 +13,9 @@ function Collapse({ title, content, size }) {
           <div className={selected ? "selected" : "unselected"}></div>
         </div>
         <div className={selected ? "collapse-body show" : "collapse-body"}>
-          <div className="collapse-content">{content}</div>
+          <div className="collapse-content">
+            <span className="collapse-content-text">{content}</span>
+          </div>
         </div>
       </div>
     </div>

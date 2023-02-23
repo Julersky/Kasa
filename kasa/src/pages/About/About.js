@@ -1,10 +1,14 @@
 import "../../styles/dist/main.scss";
 import "./About.scss";
+import { useEffect } from "react";
 import Banner from "../../components/Banner/Banner";
 import Collapse from "../../components/Collapse/Collapse";
 import data from "../../datas/about";
 
 function About() {
+  useEffect(() => {
+    document.title = "A propos";
+  }, []);
   return (
     <main className="about-main">
       <Banner />

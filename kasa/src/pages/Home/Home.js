@@ -5,7 +5,7 @@ import Gallery from "../../components/Gallery/Gallery";
 
 function Home({ children }) {
   useEffect(() => {
-    document.title = "Accueil";
+    document.title = "Kasa - Accueil";
   }, []);
   return (
     <main className="kasa-home">

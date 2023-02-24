@@ -7,7 +7,7 @@ import data from "../../datas/about";
 
 function About() {
   useEffect(() => {
-    document.title = "A propos";
+    document.title = "Kasa - A propos";
   }, []);
   return (
     <main className="about-main">

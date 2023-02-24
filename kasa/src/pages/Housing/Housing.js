@@ -8,7 +8,7 @@ import Rating from "../../components/Rating/Rating";
 import Error from "../../pages/Error/Error";
 
 function Housing() {
-  document.title = "Logement Kasa";
+  document.title = "Kasa - Logement";
   const icon = document.querySelector("head > link:nth-child(5)");
   icon.href = "../../assets/logo.png";
 

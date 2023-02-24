@@ -5,10 +5,10 @@ import emptyStar from "../../assets/etoile-vide.svg";
 const Rating = ({ hostRate }) => {
   //Construction d'un Array de 5 éléments qu'on rempli avec les étoiles
   const fullStars = Array(5).fill(
-    <img src={fullStar} alt="Full star" className="redStar" />
+    <img src={fullStar} alt="Etoile pleine" className="fullstar" />
   );
   const emptyStars = Array(5).fill(
-    <img src={emptyStar} alt="Empty Star" className="greyStar" />
+    <img src={emptyStar} alt="Etoile vide" className="emptystar" />
   );
   return (
     //Dans un premier temps on fait une difference pour recuperer a partir de quel indice, du tableau de 5 elements (donc indice 0,1,2,3,4), on va récuperer les etoiles pleines(avec slice). Ensuite on fait un map pour creer le nombre d'elements correspondant. Ici si la note est de 4: apres soustraction on determine qu'on recupere le reste du tableau a partir de l'indice 1 (inclus) donc 4 elements

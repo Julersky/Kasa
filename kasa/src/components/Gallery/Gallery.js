@@ -1,8 +1,13 @@
 import "./Gallery.scss";
 import Thumb from "../Thumb/Thumb";
-import housings from "../../datas/logements";
+
+
+
 
 function Gallery() {
+
+  let housings = require('../../datas/log.json')
+
   return (
     <section className="gallery">
       <ul className="kasa-housing-list">

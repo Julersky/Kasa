@@ -2,12 +2,13 @@ import "./Housing.scss";
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import Carousel from "../../components/Carousel/Carousel";
-import housings from "../../datas/logements";
 import Collapse from "../../components/Collapse/Collapse";
 import Rating from "../../components/Rating/Rating";
 import Error from "../../pages/Error/Error";
 
 function Housing() {
+  let housings = require('../../datas/log.json')
+
   document.title = "Kasa - Logement";
   const icon = document.querySelector("head > link:nth-child(5)");
   icon.href = "../../assets/logo.png";

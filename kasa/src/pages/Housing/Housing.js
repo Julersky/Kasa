@@ -7,7 +7,7 @@ import Rating from "../../components/Rating/Rating";
 import Error from "../../pages/Error/Error";
 
 function Housing() {
-  let housings = require('../../datas/log.json')
+  let housings = require('../../datas/logements.json')
 
   document.title = "Kasa - Logement";
   const icon = document.querySelector("head > link:nth-child(5)");

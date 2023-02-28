@@ -6,7 +6,7 @@ import Thumb from "../Thumb/Thumb";
 
 function Gallery() {
 
-  let housings = require('../../datas/log.json')
+  let housings = require('../../datas/logements.json')
 
   return (
     <section className="gallery">
